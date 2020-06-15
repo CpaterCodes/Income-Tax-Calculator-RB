@@ -1,5 +1,5 @@
 class Operator
-  def initialize
+  def initialize(brackets)
+    @brackets = brackets
   end
-
 end
