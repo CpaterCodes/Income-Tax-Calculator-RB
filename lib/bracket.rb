@@ -6,9 +6,17 @@ class Bracket
   end
 
   def run(sum)
-    sum = @ceiling if @ceiling != nil && sum > @ceiling
-    sum -= @floor if @floor != nil
+    sum = @ceiling if above_ceiling?(sum)
+    sum -= @floor if has_floor?
     return sum * @rate
   end
 
+  private
+  def has_floor?
+    @floor != nil
+  end
+
+  def above_ceiling?(quantity)
+    @ceiling != nil && quantity > @ceiling
+  end
 end
