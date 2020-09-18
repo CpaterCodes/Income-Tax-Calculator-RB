@@ -6,7 +6,8 @@ class Operator
 
   def calculate(amount)
     @brackets.each do |b|
-      @total += b.run(amount)
+      rate = b.run(amount)
+      @total += rate if rate >= 0
     end
   return @total
   end
