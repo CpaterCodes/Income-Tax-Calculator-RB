@@ -7,12 +7,12 @@ class Bracket
 
   def run(sum)
     sum = @ceiling if above_ceiling?(sum)
-    sum -= @floor if has_floor?
+    sum -= @floor if floor?
     return sum * @rate
   end
 
   private
-  def has_floor?
+  def floor?
     @floor != nil
   end
 
