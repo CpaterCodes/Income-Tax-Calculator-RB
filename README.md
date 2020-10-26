@@ -23,11 +23,11 @@ I would like to be able to customise my brackets
 - Run 'bundle install' within the directory
 - Run 'rspec' to be sure the code passes the tests
 
-#### Example procedure
+#### Example command set
 *The following corresponds to UK income tax. Feel free to*
 *adjust the number and properties of brackets according to country*
 
-*Open 'irb' and run each of the following commands:*
+*Open 'irb' while in the root directory and run each of the following commands:*
 
 ```
 require './lib/operator.rb'
@@ -68,5 +68,5 @@ Operator.calculate(brackets: uk_tax_brackets,amount: 200000.0)
 
 I hope this code proves interesting to review and play around with.
 
-As a junior software developer I enjoy to build interesting projects such as this
-and hope to continue to learn and improve in the process.
+As a junior software developer I enjoy to build interesting projects
+such as this and hope to continue to learn and improve in the process.
